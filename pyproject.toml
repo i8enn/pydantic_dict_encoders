@@ -161,4 +161,4 @@ module = [
 ignore_errors = true
 
 [tool.pyright]
-include = ['pydantic']
+include = ['pydantic_dict']
