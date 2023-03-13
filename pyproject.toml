@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pydantic-dict-encoders"
-version = "0.1"
+version = "0.2"
 description = "Pydantic mixins for support custom encoding dict"
 license = "MIT"
 authors = ["Ivan Galin <i.galin@devartsteam.ru>"]
