@@ -65,7 +65,9 @@ class PydanticDictEncodersMixin:
         return v
 
     @classmethod
-    def _get_value_custom_encoder(cls, v: Any) -> Callable[[Any], Any] | None:
+    def _get_value_custom_encoder(
+        cls, v: Any
+    ) -> Optional[Callable[[Any], Any]]:
         for _type, encoder in cls.__config__.dict_encoders.items():
             if isinstance(v, _type):  # type: ignore
                 return encoder
